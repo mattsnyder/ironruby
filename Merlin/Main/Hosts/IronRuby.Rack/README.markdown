@@ -28,7 +28,8 @@ Setup
 3. Give permissions to IIS
    - IIS needs to have permission to open files in this project, as well as in 
      the Ruby standard library. Grant the IIS_IUSRS group full permissions to this directory, 
-     and grant read-only permissiong to the Ruby standard library (usually C:\ruby\lib\ruby).
+     and grant read-only permissiong to the Ruby libraries (the path to the IronRuby
+     "Libs" directory, as well as the Ruby standard library, which is usually C:\ruby\lib\ruby).
 
 4. Open IronRack.sln in Visual Studio
    - Click "OK" to prompts about creating virtual directories, otherwise not 

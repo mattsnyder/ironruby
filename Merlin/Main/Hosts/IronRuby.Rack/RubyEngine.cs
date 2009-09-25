@@ -9,13 +9,25 @@ using IronRuby.Runtime;
 
 namespace IronRuby.Rack {
     public static class RubyEngine {
-        public static readonly ScriptEngine Engine = Ruby.CreateEngine();
+        public static readonly ScriptEngine Engine = InitializeRuby();
         private static readonly ScriptScope scope = Engine.CreateScope();
+
+        public static ScriptEngine InitializeRuby() {
+            var ruby = Ruby.CreateEngine();
+#if DEBUG
+            ruby.Runtime.LoadAssembly(typeof(RubyEngine).Assembly);
+#endif
+            return ruby;
+        }
 
         public static RubyContext Context {
             get {
                 return Ruby.GetExecutionContext(Engine);
             }
+        }
+
+        public static void SetToplevelBinding() {
+            Execute("TOPLEVEL_BINDING = binding");
         }
 
         public static object Require(string file) {
@@ -40,6 +52,9 @@ namespace IronRuby.Rack {
         }
 
         public static object Execute(string code, ScriptScope aScope) {
+#if DEBUG
+            Utils.Log(string.Format("[DEBUG] >>> {0}", code));
+#endif
             return Engine.CreateScriptSourceFromString(code).Execute(aScope);
         }
 
@@ -59,7 +74,9 @@ namespace IronRuby.Rack {
         }
 
         public static object AddLoadPath(string path) {
-            return Engine.Execute(string.Format("$LOAD_PATH.unshift '{0}'", path));
+            return Engine.Execute(
+                string.Format("$LOAD_PATH.unshift '{0}'", 
+                    IronRuby.Runtime.RubyUtils.CanonicalizePath(MutableString.CreateAscii(path))));
         }
 
         public static void SetConstant(string name, object value) {

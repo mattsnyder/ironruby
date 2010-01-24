@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microsoft.Scripting.Debuggi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microsoft.Dynamic", "..\..\Runtime\Microsoft.Dynamic\Microsoft.Dynamic.csproj", "{EB66B766-6354-4208-A3D4-AACBDCB5C3B3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IronRuby.RailsDB.Example", "IronRuby.RailsDB.Example\IronRuby.RailsDB.Example.csproj", "{8563557D-DA06-47B7-BBCD-0F46F7939F0D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -222,6 +224,20 @@ Global
 		{EB66B766-6354-4208-A3D4-AACBDCB5C3B3}.V4 Debug|Any CPU.Build.0 = V4 Debug|Any CPU
 		{EB66B766-6354-4208-A3D4-AACBDCB5C3B3}.V4 Release|Any CPU.ActiveCfg = V4 Release|Any CPU
 		{EB66B766-6354-4208-A3D4-AACBDCB5C3B3}.V4 Release|Any CPU.Build.0 = V4 Release|Any CPU
+		{8563557D-DA06-47B7-BBCD-0F46F7939F0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8563557D-DA06-47B7-BBCD-0F46F7939F0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8563557D-DA06-47B7-BBCD-0F46F7939F0D}.FxCop|Any CPU.ActiveCfg = Release|Any CPU
+		{8563557D-DA06-47B7-BBCD-0F46F7939F0D}.FxCop|Any CPU.Build.0 = Release|Any CPU
+		{8563557D-DA06-47B7-BBCD-0F46F7939F0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8563557D-DA06-47B7-BBCD-0F46F7939F0D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8563557D-DA06-47B7-BBCD-0F46F7939F0D}.Silverlight Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8563557D-DA06-47B7-BBCD-0F46F7939F0D}.Silverlight Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8563557D-DA06-47B7-BBCD-0F46F7939F0D}.Silverlight Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8563557D-DA06-47B7-BBCD-0F46F7939F0D}.Silverlight Release|Any CPU.Build.0 = Release|Any CPU
+		{8563557D-DA06-47B7-BBCD-0F46F7939F0D}.V4 Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8563557D-DA06-47B7-BBCD-0F46F7939F0D}.V4 Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8563557D-DA06-47B7-BBCD-0F46F7939F0D}.V4 Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8563557D-DA06-47B7-BBCD-0F46F7939F0D}.V4 Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

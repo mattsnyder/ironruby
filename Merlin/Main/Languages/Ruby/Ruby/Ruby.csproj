@@ -9,10 +9,14 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>IronRuby</RootNamespace>
     <AssemblyName>IronRuby</AssemblyName>
-    <SccProjectName>SAK</SccProjectName>
-    <SccLocalPath>SAK</SccLocalPath>
-    <SccAuxPath>SAK</SccAuxPath>
-    <SccProvider>SAK</SccProvider>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
     <OldToolsVersion>2.0</OldToolsVersion>
     <RunPostBuildEvent>OnOutputUpdated</RunPostBuildEvent>
     <WarningsNotAsErrors>618,1685</WarningsNotAsErrors>

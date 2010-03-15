@@ -9,10 +9,14 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Microsoft.Scripting</RootNamespace>
     <AssemblyName>Microsoft.Scripting</AssemblyName>
-    <SccProjectName>SAK</SccProjectName>
-    <SccLocalPath>SAK</SccLocalPath>
-    <SccAuxPath>SAK</SccAuxPath>
-    <SccProvider>SAK</SccProvider>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
     <DocumentationFile>..\..\Bin\Release\Microsoft.Dynamic.xml</DocumentationFile>
     <WarningsNotAsErrors>1685</WarningsNotAsErrors>
     <NoWarn>1591</NoWarn>

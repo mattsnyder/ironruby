@@ -12,17 +12,20 @@
     <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
     <WarningsNotAsErrors>1685</WarningsNotAsErrors>
     <FileAlignment>512</FileAlignment>
-    <SccProjectName>SAK</SccProjectName>
-    <SccLocalPath>SAK</SccLocalPath>
-    <SccAuxPath>SAK</SccAuxPath>
-    <SccProvider>SAK</SccProvider>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
     <DelaySign>true</DelaySign>
     <AssemblyOriginatorKeyFile>..\..\Support\MSSharedLibKey.snk</AssemblyOriginatorKeyFile>
     <SignAssembly Condition="'$(SignAssembly)' == '' And Exists('$(AssemblyOriginatorKeyFile)')">true</SignAssembly>
     <SignedSym Condition="'$(SignAssembly)' == 'true'">SIGNED</SignedSym>
     <Silverlight3Path>..\..\Utilities\Silverlight\x86ret</Silverlight3Path>
     <Silverlight4Path>..\..\Utilities\Silverlight\v4-x86fre</Silverlight4Path>
-
     <!-- The following two lines prevent csc.rsp and Microsoft.NETFramework.props from adding additional assembly references -->
     <NoConfig>true</NoConfig>
     <AddAdditionalExplicitAssemblyReferences>false</AddAdditionalExplicitAssemblyReferences>
@@ -169,14 +172,14 @@
   <ItemGroup Condition=" $(SilverlightBuild) != 'true' ">
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
-    <Reference Include="System.Core" Condition=" '$(TargetFrameworkVersion)' == 'v4.0' "/>
+    <Reference Include="System.Core" Condition=" '$(TargetFrameworkVersion)' == 'v4.0' " />
   </ItemGroup>
   <ItemGroup Condition=" $(SilverlightBuild) == 'true' ">
-    <Reference Include="mscorlib, Version=2.0.5.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e" >
+    <Reference Include="mscorlib, Version=2.0.5.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>$(SilverlightPath)\mscorlib.dll</HintPath>
     </Reference>
-    <Reference Include="System, Version=2.0.5.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e" >
+    <Reference Include="System, Version=2.0.5.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>$(SilverlightPath)\System.dll</HintPath>
     </Reference>

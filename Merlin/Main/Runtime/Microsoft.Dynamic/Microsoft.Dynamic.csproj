@@ -9,10 +9,14 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Microsoft.Scripting</RootNamespace>
     <AssemblyName>Microsoft.Dynamic</AssemblyName>
-    <SccProjectName>SAK</SccProjectName>
-    <SccLocalPath>SAK</SccLocalPath>
-    <SccAuxPath>SAK</SccAuxPath>
-    <SccProvider>SAK</SccProvider>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
     <WarningsNotAsErrors>1685,618</WarningsNotAsErrors>
     <NoWarn>1591</NoWarn>
     <AssemblyOriginatorKeyFile>..\..\Support\MSSharedLibKey.snk</AssemblyOriginatorKeyFile>
